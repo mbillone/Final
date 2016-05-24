@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="286.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rocket.app.view.MortgageController">
+   <children>
+      <GridPane layoutX="14.0" layoutY="-6.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="21.0" prefWidth="106.0" text="Yearly Income:" />
+            <TextField fx:id="txtIncome" GridPane.columnIndex="1" />
+            <Label prefHeight="21.0" prefWidth="82.0" text="Expenses:" GridPane.rowIndex="1" />
+            <TextField fx:id="txtExpenses" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Credit Score:" GridPane.rowIndex="2" />
+            <TextField fx:id="txtCreditScore" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="House Cost:" GridPane.rowIndex="3" />
+            <TextField fx:id="txtHouseCost" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Payment Term:" GridPane.rowIndex="4" />
+            <ComboBox fx:id="comboTerm" prefHeight="31.0" prefWidth="166.0" promptText="Select One..." GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="btnCalcPayment" mnemonicParsing="false" prefHeight="31.0" prefWidth="173.0" text="Calculate Payment" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label prefHeight="21.0" prefWidth="58.0" text="Rate:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label text="Payment:" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="txtRate" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <TextField fx:id="txtMortgagePayment" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <TextField fx:id="txtDownPayment" GridPane.columnIndex="3" />
+            <Label text="Down Payment:" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
